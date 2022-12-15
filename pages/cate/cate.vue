@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<my-search @gotoSearch="gotoSearch"></my-search>
 		<view class="scroll-view-container">
 			<!-- 左侧的滚动视图区域 -->
 			<scroll-view class="left-scroll-view" scroll-y :style="{height:wh +'px'}">
@@ -42,7 +43,7 @@
 			/* uni.getSystemInfoSync()获取适配机型及信息 */
 			const sysInfo = uni.getSystemInfoSync()
 			// console.log(sysInfo)
-			this.wh = sysInfo.windowHeight
+			this.wh = sysInfo.windowHeight -50
 			this.getCateList()
 			
 		},
@@ -67,6 +68,11 @@
 			gotoGoodsList(item3){
 				uni.navigateTo({
 					url:'../../subpkg/goods_list/goods_list?cid='+item3.cat_id
+				})
+			},
+			gotoSearch(){
+				uni.navigateTo({
+					url:'../../subpkg/search/search'
 				})
 			}
 		}
