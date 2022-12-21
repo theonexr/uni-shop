@@ -73,18 +73,26 @@
 	"tabBar": {
 		"list": [{
 				"pagePath": "pages/home/home",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
 				"text": "首页"
 			},
 			{
 				"pagePath": "pages/cart/cart",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
 				"text": "购物车"
 			},
 			{
 				"pagePath": "pages/cate/cate",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
 				"text": "分类"
 			},
 			{
 				"pagePath": "pages/my/my",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
 				"text": "个人中心"
 			}
 		]
