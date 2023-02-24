@@ -2,7 +2,8 @@ export default{
 	namespaced:true,
 	
 	satte:()=>({
-		address:{}
+		address:{},
+		token:','
 	}),
 	mutations:{
 		// 更新收货地址
